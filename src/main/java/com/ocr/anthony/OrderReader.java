@@ -12,7 +12,7 @@ public class OrderReader{
     public void read() {
         try {
             Reader in =new FileReader("Order.csv");
-            Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in);
+            Iterable<CSVRecord> records =CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in);
             String[] menus = {"Menu Poulet", "Menu Boeuf", "Menu Végétarien"};
             String[] side = {" avec des légumes frais", " avec des frites", " avec du riz"};
             String[] sideVegetarian = {" avec du riz", " sans riz"};
