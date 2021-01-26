@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
-public class OrderReader{
+public class OrderReader {
     public void read() {
         try {
             Reader in =new FileReader("Order.csv");
